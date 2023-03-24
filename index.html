@@ -26,16 +26,16 @@
     <section>
         <div class="container-fluid mt-2 mt-md-5">
             <div class="row justify-content-evenly">
-                <div class="col-10 col-md-5 border border-2 border-dark bg-white shadow-lg p-3">
+                <div id="p1bg" class="col-10 col-md-5 border border-2 border-dark bg-white shadow-lg p-3">
                     <div class="row justify-content-around">
                         <div class="col">
-                            <p class="badge bg-secondary fs-3 ">Player 1</p>
+                            <p id="p1tlt" class="badge bg-secondary fs-3 ">Player 1</p>
                         </div>
                     </div>
                     <div class="row justify-content-end">
                         <div class="col text-end">
                             <div class="col text-end">
-                                <h4>Total Score <span class="badge bg-secondary fs-3 ">0</span></h4>
+                                <h4>Total Score <span id="p1ts" class="badge bg-secondary fs-3 ">0</span></h4>
                             </div>
                         </div>
                     </div>
@@ -45,25 +45,36 @@
                             </h4>
                         </div>
                     </div>
+                    <div class="row justify-content-start">
+                        <div class="col text-start">
+                            <a id="p1hs" class="btn btn-success mt-2">Hold My Score</a>
+                        </div>
+                    </div>
                 </div>
-                <div class=" col-10 col-md-5 mt-3 mt-md-0 border border-2 border-dark bg-white shadow-lg p-3">
+                <div id="p2bg" class=" col-10 col-md-5 mt-3 mt-md-0 border border-2 border-dark bg-white shadow-lg p-3">
                     <div class="row justify-content-around">
                         <div class="col">
-                            <p class="badge bg-secondary fs-3 ">Player 2</p>
+                            <p id="p2tlt" class="badge bg-secondary fs-3 ">Player 2</p>
                         </div>
                     </div>
                     <div class="row justify-content-end">
                         <div class="col text-end">
                             <div class="col text-end">
                                 <h4>Total Score
-                                    <span id="p1ts" class="badge bg-secondary fs-3">0</span>
+                                    <span id="p2ts" class="badge bg-secondary fs-3">0</span>
                                 </h4>
                             </div>
                         </div>
                     </div>
                     <div class="row justify-content-end">
                         <div class="col text-end">
-                            <h4 class="mb-0">Current Score <span class="badge bg-secondary fs-3 ">0</span></h4>
+                            <h4 class="mb-0">Current Score <span id="p2cs" class="badge bg-secondary fs-3 ">0</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="row justify-content-start">
+                        <div class="col text-start">
+                            <a id="p2hs" class="btn btn-success mt-2">Hold My Score</a>
                         </div>
                     </div>
                 </div>
@@ -71,7 +82,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="roller">
         <div class="container mt-3">
             <div class="row justify-content-evenly">
                 <div class="col-md-6 col-10 border border-2 border-dark bg-white shadow-lg p-3 text-center">
