@@ -1,0 +1,13 @@
+.bg-gra {
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.roll {
+    animation: mymove 1s;
+}
+
+@keyframes mymove {
+    100% {
+        transform: rotate(360deg);
+    }
+}
