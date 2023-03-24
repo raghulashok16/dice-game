@@ -1,11 +1,11 @@
 $(document).ready(function () {
     $("#p1btn").click(function () {
-        $("#diceImg").removeClass("roll");
-        let temp = Math.floor(Math.random() * 6) + 1;
-        if (temp === 6) {
-            $("#diceImg").toggleClass("roll");
-        }
 
+        let temp = Math.floor(Math.random() * 6) + 1;
+        $("#diceImg").addClass("roll");
         $('#diceImg').attr('src', `${temp}.png`);
+        $('#p1btn').hide();
+        $("#diceImg").delay(9000).toggleClass("roll");
+        $('#p1btn').delay(9000).show();
     });
 });  

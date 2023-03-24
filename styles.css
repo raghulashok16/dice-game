@@ -3,8 +3,9 @@
 }
 
 .roll {
-    animation: mymove 1s;
+    animation: mymove 0.8s;
 }
+
 
 @keyframes mymove {
     100% {
