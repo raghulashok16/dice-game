@@ -12,6 +12,7 @@ $(document).ready(function () {
         p1temp = Math.floor(Math.random() * 6) + 1;
         $("#diceImg").toggleClass("roll");
         $('#diceImg').attr('src', `${p1temp}.png`);
+
         $('#p1btn').hide();
         const myTimeout = setTimeout(p1tgl, 800);
         function p1tgl() {
@@ -20,7 +21,12 @@ $(document).ready(function () {
             if (p1temp === 6) {
                 $('#p1btn').hide();
                 $('#p2btn').show();
+                p1currentScore = 0;
+            } else {
+                p1currentScore = p1temp + p1currentScore;
             }
+            $("#p1cs").text(`${p1currentScore}`);
+            console.log(p1currentScore);
         }
     });
 
